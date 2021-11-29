@@ -16,8 +16,7 @@ body {
 }
 
 .header {
-    @include flexAlign;
-    justify-content: space-around;
+    @include flexAlign(space-around, center);
 
     width: 100%;
     height: 50px;
@@ -37,4 +36,12 @@ body {
     &__phone {
         color: $text-color-main;
     }
+}
+
+.footer {
+    @include flexAlign;
+    width: 100%;
+    height: 30px;
+    background-color: $color-main;
+    color: $text-color-main;
 }
