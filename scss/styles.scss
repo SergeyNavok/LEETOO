@@ -27,10 +27,6 @@ body {
     top: 0;
     color: $text-color-main;
 
-    &__menu {
-        font-size: 40px;
-    }
-
     &__logo {
         font-size: 30px;
         font-family: 'Lora', sans-serif;
@@ -39,6 +35,75 @@ body {
     &__phone {
         color: $text-color-main;
     }
+}
+
+.hidden-menu {
+    display: block;
+    position: fixed;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: #eee;
+    height: 100%;
+    top: 0;
+    left: -200px;
+    transition: left .2s;
+    z-index: 2;
+}
+  
+.hidden-menu-ticker {
+    display: none;
+}
+  
+.btn-menu {
+    color: #fff;
+    background-color: $color-main;
+    padding: 7px;
+    position: fixed;
+    top: 9px;
+    left: 10px;
+    transition: left .23s;
+    z-index: 3;
+    width: 25px;
+}
+
+.btn-menu span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0 0;
+    transition: all .1s linear .23s;
+    position: relative;
+}
+
+.btn-menu span.first {
+    margin-top: 0;
+}
+  
+.hidden-menu-ticker:checked ~ .btn-menu {
+    left: 160px;
+}
+
+.hidden-menu-ticker:checked ~ .hidden-menu {
+    left: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: -8px;    
 }
 
 .banner {
