@@ -1,6 +1,6 @@
 leetoo.iml
 
-/node_modules
-/css
-/files
+/src/main/webapp/node_modules
+/src/main/webapp/css
+/src/main/webapp/files
 /.idea
