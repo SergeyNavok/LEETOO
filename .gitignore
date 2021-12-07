@@ -1,4 +1,7 @@
 package-lock.json
-/node_modules
-/css
-/files
+leetoo.iml
+
+/src/main/webapp/node_modules
+/src/main/webapp/css
+/src/main/webapp/files
+/.idea
