@@ -6,7 +6,7 @@ $text-color-alt: black;
 
 
 //Fonts
-$text-style-main: 'Montserat';
+$text-style-main: 'Montserat', sans-serif;
 
 //Flex
 @mixin flexAlign($hor: center, $vert: center) {
