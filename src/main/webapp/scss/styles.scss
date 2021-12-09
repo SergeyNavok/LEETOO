@@ -161,76 +161,52 @@ body {
     color: $text-color-alt;
 }
 
-/*
 .wrapper {
-    margin: 10px;
-    border-top: 1px solid $color-main;
-    border-left: 1px solid $color-main;
+    margin: 50px 5px 0 5px;
 }
 
 .products {
     display: flex;
     align-items: center;
-    height: 400px;
-    background-color: $text-color-main;
+    height: 330px;
+    margin-bottom: 50px;
 
     &__block {
-        border-bottom: 1px solid $color-main;
-        border-right: 1px solid $color-main;
         height: inherit;
-        width: 50%;
+        width: 47%;
+        border-radius: 30px;
+        margin: 0 5px;
+        background-color: $text-color-main;
+        box-shadow: 0.4em 0.4em 5px rgba(0, 0, 0, 0.05);
 
         &-item {
             @include flexAlign(space-around, center);
             flex-direction: column;
             padding: 10px;
             box-sizing: border-box;
+            color: $text-color-alt;
+            height: 100%;
 
             .img {
                 width: 150px;
                 height: 150px;
-                //border: 1px dotted $color-background;
                 object-fit: contain;
             }
 
-            .code {
-                margin-top: -20px;
-                margin-left: -40px;
-                height: 20px;
-                width: 100px;
+            .name {
+                margin-top: 30px;
+                font-size: small;
+                text-align: center;
             }
 
             .price {
-                display: flex;
-                justify-content: center;
-                width: 100px;
-                border-radius: 10px;
-                //background-color: $price-color;
-                color: $text-color-main;
-                margin-top: 10px;
-            }
-
-            .name {
-                margin-top: 10px;
-                font-weight: 700;
-                font-size: 20px
-            }
-
-            .description {
-                margin-top: 10px;
-                height: 130px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-
-            .btn {
-                background-color: $color-main;
-                color: $text-color-main;
+                margin-top: 30px;
+                font-size: smaller;
             }
         }
     }
 }
-*/
+
 
 .footer {
     @include flexAlign;
