@@ -119,13 +119,7 @@ body {
 }
 
 
-.text-link {
-    text-decoration: none;
-    font-size: 20px;
-    color: $text-color-alt;
-}
 
-/*
 .banner {
     margin: 60px 10px 20px 10px;
     width: 95%;
@@ -138,6 +132,15 @@ body {
     }
 }
 
+
+
+.text-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: $text-color-alt;
+}
+
+/*
 .dropdown {
     display: flex;
     justify-content: space-evenly;
