@@ -23,6 +23,7 @@ body {
     font-family: $text-style-main;
 }
 
+
 .header {
     @include flexAlign(space-around, center);
     width: 100%;
@@ -118,7 +119,6 @@ body {
 }
 
 
-
 .banner {
     margin: 60px 10px 20px 10px;
     width: 95%;
@@ -130,7 +130,6 @@ body {
         object-fit: cover;
     }
 }
-
 
 
 .dropdown {
@@ -154,7 +153,6 @@ body {
         border: none;
     }
 }
-
 
 
 .text-link {
@@ -207,7 +205,7 @@ body {
                 justify-content: center;
                 width: 100px;
                 border-radius: 10px;
-                background-color: $price-color;
+                //background-color: $price-color;
                 color: $text-color-main;
                 margin-top: 10px;
             }
@@ -232,12 +230,13 @@ body {
         }
     }
 }
+*/
 
 .footer {
     @include flexAlign;
     width: 100%;
     height: 30px;
+    margin-top: 50px;
     background-color: $color-main;
     color: $text-color-main;
 }
-*/
