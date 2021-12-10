@@ -3,6 +3,9 @@
 
 body {
     margin: 0;
+}
+
+.wrapper {
     background-color: $color-background;
     @include textStyle();
 }
@@ -106,8 +109,7 @@ body {
 
 .banner {
     margin: 60px 10px 20px 10px;
-    width: 95%;
-    height: 150px;
+    height: 200px;
 
     &__img {
         height: 100%;
@@ -143,7 +145,7 @@ body {
     color: $text-color-alt;
 }
 
-.wrapper {
+.container {
     margin: 50px 5px 0 5px;
 }
 
@@ -189,6 +191,10 @@ body {
     }
 }
 
+.products__block:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    transition: 1s;
+}
 
 .footer {
     @include flexAlign;
@@ -197,4 +203,67 @@ body {
     margin-top: 50px;
     background-color: $color-main;
     color: $text-color-main;
+}
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    .wrapper {
+        margin: 0 25%;
+        max-width: 700px;
+        background-color: $color-background;
+        @include textStyle();
+    }
+
+    .header {
+        max-width: 50%;
+        height: 40px;
+        font-size: small;
+
+        .hidden-menu {
+            justify-content: space-between;
+            flex-direction: row;
+            position: inherit;
+            height: inherit;
+            padding: 0;
+            background-color: $color-main;
+            width: 120%;
+
+            &__link {
+                height: inherit;
+            }
+        }
+
+        .btn-menu, .hidden-menu-ticker, .header__logo {
+            display: none;
+        }
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .dropdown {
+        margin: 0px 10%;
+    }
+
+    .text-link {
+        font-size: small;
+        color: $text-color-main;
+    }
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .products__block {
+        width: 35%;
+        margin: 0 7%;
+
+        .img {
+            width: inherit;
+        }
+    }
 }
