@@ -1,57 +1,41 @@
-//Colors
-$color-main: rgb(119, 145, 130);
-$color-background: #f9f5f3;
-$color-border: #bfbaaf;
-$text-color-main: #fff;
-$text-color-alt: black;
-
-//Fonts
-$text-style-main: 'Montserat', sans-serif;
-
-//Flex
-@mixin flexAlign($hor: center, $vert: center) {
-    display: flex;
-    justify-content: $hor;
-    align-items: $vert;
-}
-
-
+@import './colors.scss';
+@import './mixin.scss';
 
 body {
     margin: 0;
     background-color: $color-background;
-    font-family: $text-style-main;
+    @include textStyle();
 }
 
 
 .header {
     @include flexAlign(space-around, center);
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 50px;
     background-color: $color-main;
-    position: fixed;
-    top: 0;
     color: $text-color-main;
 
     .btn-menu {
-        color: #fff;
+        color: $color-main;
         background-color: $color-main;
-        padding: 7px;
         position: fixed;
         top: 9px;
         left: 10px;
+        width: 25px;
+        padding: 7px;
         transition: left .23s;
         z-index: 3;
-        width: 25px;
     }
 
     .btn-menu span {
         display: block;
+        position: relative;
         height: 3px;
-        background-color: #fff;
+        background-color: $text-color-main;
         margin: 5px 0 0;
         transition: all .1s linear .23s;
-        position: relative;
     }
 
     .btn-menu span.first {
@@ -63,19 +47,19 @@ body {
         flex-direction: column;
         position: fixed;
         list-style: none;
-        padding: 70px 30px 0 30px;
-        margin: 0;
-        box-sizing: border-box;
-        width: 280px;
-        background-color: #eee;
-        height: 100%;
         top: 0;
         left: -280px;
+        width: 280px;
+        height: 100%;
+        padding: 70px 30px 0 30px;
+        box-sizing: border-box;
+        margin: 0;
+        background-color: $color-menu;
         transition: left .2s;
         z-index: 2;
 
         .hidden-menu-ticker {
-            display: none;   
+            display: none;
         }
 
         &__link {
@@ -109,7 +93,7 @@ body {
 
     &__logo {
         font-size: 30px;
-        font-family: 'Lora', sans-serif;
+        font-weight: bold;
     }
 
     &__phone {
@@ -117,6 +101,7 @@ body {
         color: $text-color-main;
     }
 }
+
 
 
 .banner {
@@ -128,16 +113,15 @@ body {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 10px;
     }
 }
 
 
 .dropdown {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0px 40px;
+    @include flexAlign(space-evenly, center);
     height: 35px;
+    margin: 0px 40px;
     background-color: $text-color-main;
     border-radius: 30px;
     border: 1px solid $color-border;
@@ -147,13 +131,11 @@ body {
         font-size: 14px;
         padding: 5px;
         box-sizing: border-box;
-        //width: 50%;
         margin: 0;
         border-radius: 10px;
         border: none;
     }
 }
-
 
 .text-link {
     text-decoration: none;
@@ -166,18 +148,17 @@ body {
 }
 
 .products {
-    display: flex;
-    align-items: center;
+    @include flexAlign(center, center);
     height: 330px;
     margin-bottom: 50px;
 
     &__block {
-        height: inherit;
         width: 47%;
+        height: inherit;
         border-radius: 30px;
         margin: 0 5px;
         background-color: $text-color-main;
-        box-shadow: 0.4em 0.4em 5px rgba(0, 0, 0, 0.05);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
 
         &-item {
             @include flexAlign(space-around, center);
@@ -197,13 +178,12 @@ body {
                 margin-top: 30px;
                 font-size: small;
                 text-align: center;
-                @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-                font-family: 'Nunito';
             }
 
             .price {
                 margin-top: 30px;
                 font-size: smaller;
+                font-weight: bold;
             }
         }
     }
