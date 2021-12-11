@@ -26,7 +26,7 @@ public class MySQLConnectionManager {
 
     static {
         try {
-            Class.forName(properties.getProperty(ConnectionConstant.DB_DRIVER);
+            Class.forName(properties.getProperty(ConnectionConstant.DB_DRIVER));
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
