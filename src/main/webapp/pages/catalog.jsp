@@ -15,29 +15,27 @@
 </head>
 
 <body>
-<div class="wrapper">
-    <c:import url="<%=ControllerConstant.HEADER_ELEMENT_JSP%>"/>
-    <c:import url="<%=ControllerConstant.BANNER_ELEMENT_JSP%>"/>
-    <c:import url="<%=ControllerConstant.DROPDOWN_ELEMENT_JSP%>"/>
+    <div class="wrapper">
+        <c:import url="<%=ControllerConstant.HEADER_ELEMENT_JSP%>" />
+        <c:import url="<%=ControllerConstant.BANNER_ELEMENT_JSP%>" />
+        <c:import url="<%=ControllerConstant.DROPDOWN_ELEMENT_JSP%>" />
 
-    <c:forEach var="product" items="${products}">
-        <div class="container">
-            <div class="products">
+        <div class="products">
+            <c:forEach var="product" items="${products}">
                 <div class="products__block">
                     <a class="text-link" href="<c:url value="/catalog?id=${product.id}"/>">
-                        <div class="products__block-item">
-                            <img class="img" src="./files/product101.jpg" alt="Изображение товара">
-                            <div class="name">${product.name}</div>
-                            <div class="price">${product.price} BYN</div>
-                        </div>
+                    <div class="products__block-item">
+                        <img class="img" src="./files/product101.jpg" alt="Изображение товара">
+                        <div class="name">${product.name}</div>
+                        <div class="price">${product.price} BYN</div>
+                    </div>
                     </a>
                 </div>
-            </div>
+            </c:forEach>
         </div>
-    </c:forEach>
 
-    <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>"/>
-</div>
+        <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>" />
+    </div>
 </body>
 
 </html>
