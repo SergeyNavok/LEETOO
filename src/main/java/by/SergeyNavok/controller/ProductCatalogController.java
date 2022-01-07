@@ -10,22 +10,16 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "ShowProductController", urlPatterns = ControllerConstant.SHOW_CONT)
-public class ShowProductController extends AbstractController {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
-    }
-
+@WebServlet(name = "ProductCatalogController", urlPatterns = ControllerConstant.CATALOG_CONT)
+public class ProductCatalogController extends AbstractController {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            List<Product> productList = productService.getProductsList();
-            request.setAttribute(ControllerConstant.PRODUCT_LIST_ATTR, productList);
+            List<Product> products = productService.getProductsList();
+            request.setAttribute(ControllerConstant.PRODUCT_LIST_ATTR, products);
             jumpToPage(request, response, ControllerConstant.CATALOG_JSP);
         } catch (DAOException e) {
             e.printStackTrace();
         }
-
     }
 }

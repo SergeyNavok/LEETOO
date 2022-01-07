@@ -7,6 +7,12 @@ public class Product {
     private String description;
     private int price;
 
+    public Product(int id, String name, int price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+    }
+
     public Product(int id, int category, String name, int price) {
         this.id = id;
         this.category = category;
@@ -32,5 +38,13 @@ public class Product {
 
     public String getName() {
         return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getPrice() {
+        return price;
     }
 }
