@@ -1,0 +1,26 @@
+{
+  "name": "leetoo",
+  "version": "1.0.0",
+  "description": "The initial stage of agreement with the customer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "node-sass scss/ -o css/",
+    "watch": "npm run compile && node-sass ./scss/styles.scss -wo css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyNavok/LEETOO.git"
+  },
+  "author": "SergeyNavok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeyNavok/LEETOO/issues"
+  },
+  "homepage": "https://github.com/SergeyNavok/LEETOO#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "sass": "^1.43.5"
+  },
+  "devDependencies": {}
+}
