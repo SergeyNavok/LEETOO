@@ -11,6 +11,10 @@ import java.io.IOException;
 public class AbstractController extends HttpServlet {
     protected ProductService productService;
 
+    public AbstractController() {
+        productService = new ProductService();
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);

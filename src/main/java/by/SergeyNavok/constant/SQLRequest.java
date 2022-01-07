@@ -1,7 +1,7 @@
 package by.SergeyNavok.constant;
 
 public class SQLRequest {
-    public static final String SELECT_PRODUCT = "select * from articles";
+    public static final String SELECT_PRODUCT = "select * from products";
 
     public static final String ID_COLUMN = "id";
     public static final String CATEGORY_COLUMN = "category";
