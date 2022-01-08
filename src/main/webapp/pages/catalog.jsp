@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <%=WebAppConstant.PAGE_TITLE_CATALOG%>>
+        <%=WebAppConstant.PAGE_TITLE_CATALOG%>
     </title>
 
     <link rel="stylesheet" href="./css/styles.css">
@@ -19,16 +19,16 @@
 
 <body>
     <div class="wrapper">
-        <c:import url="<%=ControllerConstant.HEADER_ELEMENT_JSP%>" />
-        <c:import url="<%=ControllerConstant.BANNER_ELEMENT_JSP%>" />
-        <c:import url="<%=ControllerConstant.DROPDOWN_ELEMENT_JSP%>" />
+        <c:import url="<%=ControllerConstant.HEADER_ELEMENT_JSP%>"/>
+        <c:import url="<%=ControllerConstant.BANNER_ELEMENT_JSP%>"/>
+        <c:import url="<%=ControllerConstant.DROPDOWN_ELEMENT_JSP%>"/>
 
         <div class="products">
             <c:forEach var="product" items="${products}">
                 <div class="products__block">
-                    <a class="text-link" href="<c:url value=" /catalog?id=${product.id}" />">
+                    <a class="text-link" href="<c:url value="/catalog?id=${product.id}"/>">
                     <div class="products__block-item">
-                        <img class="img" src="./files/product101.jpg" alt="Изображение товара">
+                        <img class="img" src="./files/product101.jpg" alt="<%=WebAppConstant.NO_IMAGE%>>">
                         <div class="name">${product.name}</div>
                         <div class="price">${product.price} BYN</div>
                     </div>
@@ -37,7 +37,7 @@
             </c:forEach>
         </div>
 
-        <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>" />
+        <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>"/>
     </div>
 </body>
 

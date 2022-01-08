@@ -217,7 +217,7 @@ body {
         //max-width: 50%;
         max-width: 700px;
         height: 40px;
-        font-size: small;
+        font-size: medium;
 
         .hidden-menu {
             justify-content: space-between;
@@ -261,6 +261,14 @@ body {
 
         .img {
             width: inherit;
+        }
+
+        .name {
+            font-size: small;
+        }
+
+        .price {
+            font-size: small;
         }
     }
 }

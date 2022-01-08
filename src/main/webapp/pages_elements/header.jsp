@@ -1,3 +1,4 @@
+<%@ page import="by.SergeyNavok.constant.WebAppConstant" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
 <div class="header">
@@ -12,19 +13,19 @@
 
         <ul class="hidden-menu">
             <li class="hidden-menu__link">
-                <a class="text-link" href="#">О нас</a>
+                <a class="text-link" href="#"><%=WebAppConstant.HEADER_LINK_1%></a>
             </li>
 
             <li class="hidden-menu__link">
-                <a class="text-link" href="#">Оплата и доставка</a>
+                <a class="text-link" href="#"><%=WebAppConstant.HEADER_LINK_2%></a>
             </li>
 
             <li class="hidden-menu__link">
-                <a class="text-link" href="#">Link 3</a>
+                <a class="text-link" href="#"><%=WebAppConstant.HEADER_LINK_3%></a>
             </li>
         </ul>
     </div>
 
-    <div class="header__logo">LEETOO</div>
-    <a href="tel:+375 29 000-00-00" class="header__phone">+375 29 000-00-00</a>
+    <div class="header__logo"><%=WebAppConstant.NAME_APP%></div>
+    <a href="tel:<%=WebAppConstant.HEADER_PHONE%>" class="header__phone"><%=WebAppConstant.HEADER_PHONE%></a>
 </div>
