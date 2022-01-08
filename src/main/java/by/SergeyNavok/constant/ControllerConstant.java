@@ -3,19 +3,23 @@ package by.SergeyNavok.constant;
 public class ControllerConstant {
     private static final String SLASH = "/";
     private static final String WEB_APP_LABEL = SLASH + GlobalConstant.NAME_WEB_APP;
+    public static final String ID_LABEL = "id";
 
     public static final String CATALOG_CONT = "/catalog";
+    public static final String DETAILS_CONT = "/details";
 
     public static final String LINK_APP_HOME = WEB_APP_LABEL;
     public static final String LINK_APP_CATALOG = WEB_APP_LABEL + CATALOG_CONT;
 
     public static final String PRODUCT_LIST_ATTR = "products";
     public static final String PRODUCT_SORT_ATTR = "sort";
+    public static final String DETAILS_ATTR = "product";
 
     public static final String PAGES_FOLDER = "/pages";
     public static final String PAGES_ELEMENTS_FOLDER = "/pages_elements";
 
     public static final String CONTACTS_JSP = PAGES_FOLDER + "/contacts.jsp";
+    public static final String PRODUCT_JSP = PAGES_FOLDER + "/product.jsp";
     public static final String LINK_APP_CONTACTS = WEB_APP_LABEL + CONTACTS_JSP;
 
     public static final String CATALOG_JSP = PAGES_FOLDER + "/catalog.jsp";

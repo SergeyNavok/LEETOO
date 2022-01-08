@@ -11,10 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <%=WebAppConstant.PAGE_TITLE_CONTACTS%>
+        <%=WebAppConstant.PAGE_TITLE_PRODUCT%>
     </title>
 
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -23,7 +23,11 @@
     <c:import url="<%=ControllerConstant.BANNER_ELEMENT_JSP%>" />
 
     <div class="container">
-        <span class="text"><%=WebAppConstant.HOME_PAGE_ABOUT%></span>
+        <span class="text">id=${product.id}</span>
+        <span class="text">category=${product.category}</span>
+        <span class="text">${product.name}</span>
+        <span class="text">${product.description}</span>
+        <span class="text">${product.price} BYN</span>
     </div>
 
     <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>" />

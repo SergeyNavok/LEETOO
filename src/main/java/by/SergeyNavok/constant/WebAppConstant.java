@@ -5,6 +5,8 @@ public class WebAppConstant {
 
     public static final String PAGE_TITLE_HOME = NAME_APP + " в Беларуси!";
     public static final String PAGE_TITLE_CATALOG = "Каталог продукции";
+    public static final String PAGE_TITLE_CONTACTS = "Контакты";
+    public static final String PAGE_TITLE_PRODUCT = "Подробнее";
 
     public static final String NO_IMAGE = "NO IMAGE";
 

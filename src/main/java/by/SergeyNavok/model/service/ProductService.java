@@ -1,8 +1,10 @@
 package by.SergeyNavok.model.service;
 
+import by.SergeyNavok.constant.ControllerConstant;
 import by.SergeyNavok.model.bean.Product;
 import by.SergeyNavok.model.dao.ProductDAO;
 import by.SergeyNavok.model.exception.DAOException;
+import by.SergeyNavok.model.exception.ServiceException;
 
 import java.util.List;
 
@@ -17,8 +19,9 @@ public class ProductService {
         return productDAO.getProductList();
     }
 
-    public List<Product> getProductsListSortByPrice(int value) throws DAOException {
-        switch (value) {
+    public List<Product> getProductsListSortByPrice(String value) throws DAOException {
+        int id = Integer.parseInt(value);
+        switch (id) {
             case (2):
                 return productDAO.getProductListSortByHighPrice();
 
@@ -28,5 +31,16 @@ public class ProductService {
             default:
                 return productDAO.getProductList();
         }
+    }
+
+    public Product getProductByID(String value) throws ServiceException {
+        Product product = null;
+        try {
+            int id = Integer.parseInt(value);
+            product = productDAO.getProductByID(id);
+        } catch (NumberFormatException | IndexOutOfBoundsException | DAOException e) {
+            throw new ServiceException(e);
+        }
+        return product;
     }
 }

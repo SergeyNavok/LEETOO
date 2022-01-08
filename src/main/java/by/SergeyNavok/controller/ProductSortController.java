@@ -14,8 +14,8 @@ import java.util.List;
 public class ProductSortController extends AbstractController {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int value = Integer.parseInt(request.getParameter(ControllerConstant.SORTING_FORM));
         try {
+            String value = request.getParameter(ControllerConstant.SORTING_FORM);
             List<Product> products = productService.getProductsListSortByPrice(value);
             request.setAttribute(ControllerConstant.PRODUCT_LIST_ATTR, products);
             request.setAttribute(ControllerConstant.PRODUCT_SORT_ATTR, value);

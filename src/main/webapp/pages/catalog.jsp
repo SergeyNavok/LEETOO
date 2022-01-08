@@ -26,7 +26,7 @@
         <div class="products">
             <c:forEach var="product" items="${products}">
                 <div class="products__block">
-                    <a class="text-link" href="<c:url value="/catalog?id=${product.id}"/>">
+                    <a class="text-link" href="<c:url value="/details?id=${product.id}"/>">
                     <div class="products__block-item">
                         <img class="img" src="./files/product101.jpg" alt="<%=WebAppConstant.NO_IMAGE%>>">
                         <div class="name">${product.name}</div>
