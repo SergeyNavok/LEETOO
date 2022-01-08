@@ -17,11 +17,16 @@ public class ProductService {
         return productDAO.getProductList();
     }
 
-    public List<Product> getProductListByCategory() {
-        //
-        //
-        return null;
-        //
-        //
+    public List<Product> getProductsListSortByPrice(int value) throws DAOException {
+        switch (value) {
+            case (2):
+                return productDAO.getProductListSortByHighPrice();
+
+            case (3):
+                return productDAO.getProductListSortByLowPrice();
+
+            default:
+                return productDAO.getProductList();
+        }
     }
 }

@@ -42,4 +42,66 @@ public class ProductDAO {
         }
         return products;
     }
+
+
+    public List<Product> getProductListSortByHighPrice() throws DAOException {
+        List<Product> products = new ArrayList<>();
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            connection = MySQLConnectionManager.getConnection();
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(SQLRequest.SELECT_PRODUCT_BY_HIGH_PRICE);
+
+            while (resultSet.next()) {
+                int id = resultSet.getInt(SQLRequest.ID_COLUMN);
+                int category = resultSet.getInt(SQLRequest.CATEGORY_COLUMN);
+                String name = resultSet.getString(SQLRequest.NAME_COLUMN);
+                String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
+                int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
+
+                products.add(new Product(id, category, name, description, price));
+            }
+        } catch (SQLException e) {
+            throw new DAOException();
+        } finally {
+            MySQLConnectionManager.closeResultSet(resultSet);
+            MySQLConnectionManager.closeStatement(statement);
+            MySQLConnectionManager.closeConnection();
+        }
+        return products;
+    }
+
+
+    public List<Product> getProductListSortByLowPrice() throws DAOException {
+        List<Product> products = new ArrayList<>();
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            connection = MySQLConnectionManager.getConnection();
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(SQLRequest.SELECT_PRODUCT_BY_LOW_PRICE);
+
+            while (resultSet.next()) {
+                int id = resultSet.getInt(SQLRequest.ID_COLUMN);
+                int category = resultSet.getInt(SQLRequest.CATEGORY_COLUMN);
+                String name = resultSet.getString(SQLRequest.NAME_COLUMN);
+                String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
+                int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
+
+                products.add(new Product(id, category, name, description, price));
+            }
+        } catch (SQLException e) {
+            throw new DAOException();
+        } finally {
+            MySQLConnectionManager.closeResultSet(resultSet);
+            MySQLConnectionManager.closeStatement(statement);
+            MySQLConnectionManager.closeConnection();
+        }
+        return products;
+    }
 }
