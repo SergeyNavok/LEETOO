@@ -22,13 +22,12 @@
         <c:import url="<%=ControllerConstant.HEADER_ELEMENT_JSP%>" />
         <c:import url="<%=ControllerConstant.BANNER_ELEMENT_JSP%>" />
 
-        <%=WebAppConstant.HOME_PAGE_ABOUT%>
+        <div class="container">
+            <span class="text"><%=WebAppConstant.HOME_PAGE_ABOUT%></span>
+            <a class="BTN" href="<%=ControllerConstant.LINK_APP_CATALOG%>"><%=WebAppConstant.HOME_PAGE_LINK%></a>
+        </div>
 
-            <a href="<%=ControllerConstant.LINK_APP_CATALOG%>">
-                <%=WebAppConstant.HOME_PAGE_LINK%>
-            </a>
-
-            <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>" />
+        <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>" />
     </div>
 </body>
 

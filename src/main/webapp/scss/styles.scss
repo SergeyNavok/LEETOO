@@ -6,8 +6,11 @@ body {
 }
 
 .wrapper {
+    //@include flexAlign(space-between, center);
+    //flex-direction: column;
     background-color: $color-background;
     @include textStyle();
+    //min-height: 100vh;
 }
 
 
@@ -125,7 +128,7 @@ body {
 .dropdown {
     @include flexAlign(space-evenly, center);
     height: 35px;
-    margin: 0px 40px 50px;
+    margin: 0px 40px;
     background-color: $text-color-main;
     border-radius: 30px;
     border: 1px solid $color-border;
@@ -140,6 +143,39 @@ body {
         border: none;
     }
 }
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 55vh;
+    margin: 0 50px;
+    border-radius: 30px;
+    background-color: $text-color-main;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+
+    .text {
+        padding: 30px;
+        box-sizing: border-box;
+    }
+}
+
+
+.BTN {
+    @include flexAlign;
+    height: 35px;
+    width: 200px;
+    background-color: $color-menu;
+    border-radius: 30px;
+    border: 1px solid $color-border;
+    text-decoration: none;
+    font-weight: bold;
+    color: $text-color-alt;
+}
+
+
 
 .text-link {
     text-decoration: none;
@@ -156,7 +192,7 @@ body {
         width: 47%;
         height: inherit;
         border-radius: 30px;
-        margin: 0 5px 50px;
+        margin: 50px 5px 0;
         background-color: $text-color-main;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
 
@@ -201,6 +237,7 @@ body {
     height: 30px;
     background-color: $color-main;
     color: $text-color-main;
+    margin-top: 50px;
 }
 
 
@@ -246,7 +283,15 @@ body {
     }
 
     .dropdown {
-        margin: 0px 10% 50px;
+        margin: 0px 10%;
+    }
+
+    .container {
+        margin: 0 10%;
+
+        .text {
+            padding: 10%;
+        }
     }
 
     .text-link {
@@ -260,7 +305,7 @@ body {
 @media screen and (min-width: 900px) {
     .products__block {
         width: 30%;
-        margin: 0 7% 50px;
+        margin: 50px 7% 0;
 
         .img {
             width: inherit;
