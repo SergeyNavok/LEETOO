@@ -155,10 +155,23 @@ body {
     border-radius: 30px;
     background-color: $text-color-main;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    box-sizing: border-box;
 
     .text {
-        padding: 30px;
-        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    .name {
+        margin-bottom: 30px;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .price {
+        margin-bottom: 30px;
+        font-size: large;
+        font-weight: bold;
     }
 }
 

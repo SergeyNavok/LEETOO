@@ -23,11 +23,11 @@
     <c:import url="<%=ControllerConstant.BANNER_ELEMENT_JSP%>" />
 
     <div class="container">
-        <span class="text">id=${product.id}</span>
-        <span class="text">category=${product.category}</span>
-        <span class="text">${product.name}</span>
+        <%--<span class="text">id=${product.id}</span>
+        <span class="text">category=${product.category}</span>--%>
+        <span class="name">${product.name}</span>
         <span class="text">${product.description}</span>
-        <span class="text">${product.price} BYN</span>
+        <span class="price">${product.price} BYN</span>
     </div>
 
     <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>" />
