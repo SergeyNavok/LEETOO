@@ -1,4 +1,5 @@
 <%@ page import="by.SergeyNavok.constant.WebAppConstant" %>
+<%@ page import="by.SergeyNavok.constant.ControllerConstant" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
 <div class="header">
@@ -13,11 +14,11 @@
 
         <ul class="hidden-menu">
             <li class="hidden-menu__link">
-                <a class="text-link" href="#"><%=WebAppConstant.HEADER_LINK_1%></a>
+                <a class="text-link" href="<%=ControllerConstant.LINK_APP_HOME%>"><%=WebAppConstant.HEADER_LINK_1%></a>
             </li>
 
             <li class="hidden-menu__link">
-                <a class="text-link" href="#"><%=WebAppConstant.HEADER_LINK_2%></a>
+                <a class="text-link" href="<%=ControllerConstant.LINK_APP_CATALOG%>"><%=WebAppConstant.HEADER_LINK_2%></a>
             </li>
 
             <li class="hidden-menu__link">
@@ -26,6 +27,6 @@
         </ul>
     </div>
 
-    <div class="header__logo"><%=WebAppConstant.NAME_APP%></div>
+    <a class="header__logo" href="<%=ControllerConstant.LINK_APP_HOME%>"><%=WebAppConstant.NAME_APP%></a>
     <a href="tel:<%=WebAppConstant.HEADER_PHONE%>" class="header__phone"><%=WebAppConstant.HEADER_PHONE%></a>
 </div>

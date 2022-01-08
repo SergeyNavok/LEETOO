@@ -1,7 +1,12 @@
 package by.SergeyNavok.constant;
 
 public class ControllerConstant {
+    private static final String WEB_AAP_LABEL = "/" + GlobalConstant.NAME_WEB_APP;
+
     public static final String CATALOG_CONT = "/catalog";
+
+    public static final String LINK_APP_HOME = WEB_AAP_LABEL;
+    public static final String LINK_APP_CATALOG = WEB_AAP_LABEL + CATALOG_CONT;
 
     public static final String PRODUCT_LIST_ATTR = "products";
 

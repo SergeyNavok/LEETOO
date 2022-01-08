@@ -1,8 +1,10 @@
 package-lock.json
 leetoo.iml
 
+/.idea
+/target
+
 /src/main/webapp/node_modules
 /src/main/webapp/css
 /src/main/webapp/files
-/.idea
-/target
+/src/main/webapp/pages_test
