@@ -22,7 +22,7 @@
             </li>
 
             <li class="hidden-menu__link">
-                <a class="text-link" href="#"><%=WebAppConstant.HEADER_LINK_3%></a>
+                <a class="text-link" href="<%=ControllerConstant.LINK_APP_CONTACTS%>"><%=WebAppConstant.HEADER_LINK_3%></a>
             </li>
         </ul>
     </div>
