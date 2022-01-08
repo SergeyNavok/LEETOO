@@ -7,19 +7,6 @@ public class Product {
     private String description;
     private int price;
 
-    public Product(int id, String name, int price) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-    }
-
-    public Product(int id, int category, String name, int price) {
-        this.id = id;
-        this.category = category;
-        this.name = name;
-        this.price = price;
-    }
-
     public Product(int id, int category, String name, String description, int price) {
         this.id = id;
         this.category = category;

@@ -26,7 +26,8 @@
         <div class="products">
             <c:forEach var="product" items="${products}">
                 <div class="products__block">
-                    <a class="text-link" href="<c:url value="/details?id=${product.id}"/>">
+                    <%--MAGIC NUMBER IS HERE!--%>
+                    <a class="text-link" href="<c:url value="/product?id=${product.id}"/>">
                     <div class="products__block-item">
                         <img class="img" src="./files/product101.jpg" alt="<%=WebAppConstant.NO_IMAGE%>>">
                         <div class="name">${product.name}</div>

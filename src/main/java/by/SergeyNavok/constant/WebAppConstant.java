@@ -19,7 +19,11 @@ public class WebAppConstant {
     public static final String HOME_PAGE_ABOUT = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam " +
             "cupiditate doloribus impedit, veniam magni minus optio facilis dicta maxime beatae nisi ratione nesciunt " +
             "inventore mollitia ea voluptas, asperiores est molestias.";
+
     public static final String HOME_PAGE_LINK = "Перейти в каталог";
 
     public static final String SORT_DROPDOWN = "Сортировать: ";
+    public static final String SORT_DROPDOWN_VALUE_1 = "по умолчанию";
+    public static final String SORT_DROPDOWN_VALUE_2 = "цена по возрастанию";
+    public static final String SORT_DROPDOWN_VALUE_3 = "цена по убыванию";
 }

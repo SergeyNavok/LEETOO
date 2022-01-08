@@ -19,17 +19,21 @@ public class ProductService {
         return productDAO.getProductList();
     }
 
-    public List<Product> getProductsListSortByPrice(String value) throws DAOException {
-        int id = Integer.parseInt(value);
-        switch (id) {
-            case (2):
-                return productDAO.getProductListSortByHighPrice();
+    public List<Product> getProductsListSortByPrice(String value) throws ServiceException {
+        try {
+            int id = Integer.parseInt(value);
+            switch (id) {
+                case (2):
+                    return productDAO.getProductListSortByHighPrice();
 
-            case (3):
-                return productDAO.getProductListSortByLowPrice();
+                case (3):
+                    return productDAO.getProductListSortByLowPrice();
 
-            default:
-                return productDAO.getProductList();
+                default:
+                    return productDAO.getProductList();
+            }
+        } catch (NumberFormatException | IndexOutOfBoundsException | DAOException e) {
+            throw new ServiceException(e);
         }
     }
 
