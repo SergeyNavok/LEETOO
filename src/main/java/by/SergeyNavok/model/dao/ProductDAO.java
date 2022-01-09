@@ -28,7 +28,11 @@ public class ProductDAO {
                 String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
                 int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
 
-                products.add(new Product(id, category, name, description, price));
+                //
+                byte[] img = resultSet.getBytes(SQLRequest.IMG_COLUMN);
+
+                products.add(new Product(id, category, name, description, price, img));
+                //products.add(new Product(id, category, name, description, price));
             }
         } catch (SQLException e) {
             throw new DAOException();
@@ -59,7 +63,11 @@ public class ProductDAO {
                 String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
                 int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
 
-                products.add(new Product(id, category, name, description, price));
+                //
+                byte[] img = resultSet.getBytes(SQLRequest.IMG_COLUMN);
+
+                products.add(new Product(id, category, name, description, price, img));
+                ////products.add(new Product(id, category, name, description, price));
             }
         } catch (SQLException e) {
             throw new DAOException();
@@ -90,7 +98,12 @@ public class ProductDAO {
                 String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
                 int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
 
-                products.add(new Product(id, category, name, description, price));
+                //
+                byte[] img = resultSet.getBytes(SQLRequest.IMG_COLUMN);
+
+                products.add(new Product(id, category, name, description, price, img));
+
+                ////products.add(new Product(id, category, name, description, price));
             }
         } catch (SQLException e) {
             throw new DAOException();
@@ -122,7 +135,11 @@ public class ProductDAO {
                 String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
                 int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
 
-                product = new Product(id, category, name, description, price);
+                //
+                byte[] img = resultSet.getBytes(SQLRequest.IMG_COLUMN);
+
+                product = new Product(id, category, name, description, price, img);
+                //product = new Product(id, category, name, description, price);
             }
         } catch (SQLException e) {
             throw new DAOException();

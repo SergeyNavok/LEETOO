@@ -158,8 +158,16 @@ body {
     padding: 30px;
     box-sizing: border-box;
 
-    .text {
+    .img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
         margin-bottom: 50px;
+        border-radius: 15px;
+    }
+
+    .text {
+        margin-bottom: 0 0 0 50px;
     }
 
     .name {
@@ -221,6 +229,7 @@ body {
                 width: 150px;
                 height: 150px;
                 object-fit: contain;
+                border-radius: 15px;
             }
 
             .name {

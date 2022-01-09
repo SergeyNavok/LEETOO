@@ -25,8 +25,14 @@
     <div class="container">
         <%--<span class="text">id=${product.id}</span>
         <span class="text">category=${product.category}</span>--%>
+
+        <%--<c:out value='${product.img}' >
+            <img src="${pageContext.request.contextPath}">
+        </c:out>--%>
+
+        <img class="img" src="./img/product/${product.id}/product.jpg">
         <span class="name">${product.name}</span>
-        <span class="text">${product.description}</span>
+        <p class="text">${product.description}</p>
         <span class="price">${product.price} BYN</span>
     </div>
 
