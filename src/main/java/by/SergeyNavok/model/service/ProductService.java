@@ -42,6 +42,13 @@ public class ProductService {
         try {
             int id = Integer.parseInt(value);
             product = productDAO.getProductByID(id);
+
+            //Formatting output text for HTML
+            String description = product.getDescription();
+            String regex = "\n";
+            String replace = "<br>";
+            product.setDescription(description.replaceAll(regex, replace));
+
         } catch (NumberFormatException | IndexOutOfBoundsException | DAOException e) {
             throw new ServiceException(e);
         }

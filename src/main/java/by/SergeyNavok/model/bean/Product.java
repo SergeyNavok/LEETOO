@@ -54,4 +54,9 @@ public class Product {
     public byte[] getImg() {
         return img;
     }
+
+    //
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
