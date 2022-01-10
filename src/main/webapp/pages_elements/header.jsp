@@ -1,5 +1,5 @@
-<%@ page import="by.SergeyNavok.constant.WebAppConstant" %>
-<%@ page import="by.SergeyNavok.constant.ControllerConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.WebAppConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.ControllerConstant" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
 <div class="header">
@@ -27,6 +27,6 @@
         </ul>
     </div>
 
-    <a class="header__logo" href="<%=ControllerConstant.LINK_APP_HOME%>"><%=WebAppConstant.NAME_APP%></a>
+    <a class="header__logo" href="<%=ControllerConstant.LINK_APP_CATALOG%>"><%=WebAppConstant.NAME_APP%></a>
     <a href="tel:<%=WebAppConstant.HEADER_PHONE%>" class="header__phone"><%=WebAppConstant.HEADER_PHONE%></a>
 </div>

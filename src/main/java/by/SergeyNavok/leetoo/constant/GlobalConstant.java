@@ -1,4 +1,4 @@
-package by.SergeyNavok.constant;
+package by.SergeyNavok.leetoo.constant;
 
 public class GlobalConstant {
     public static final String NAME_WEB_APP = "LEETOO";

@@ -1,5 +1,5 @@
-<%@ page import="by.SergeyNavok.constant.ControllerConstant" %>
-<%@ page import="by.SergeyNavok.constant.WebAppConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.ControllerConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.WebAppConstant" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
@@ -23,17 +23,12 @@
     <c:import url="<%=ControllerConstant.BANNER_ELEMENT_JSP%>" />
 
     <div class="container">
-        <%--<span class="text">id=${product.id}</span>
-        <span class="text">category=${product.category}</span>--%>
-
-        <%--<c:out value='${product.img}' >
-            <img src="${pageContext.request.contextPath}">
-        </c:out>--%>
 
         <img class="img" src="./img/product/${product.id}/product.jpg">
         <span class="name">${product.name}</span>
         <p class="text">${product.description}</p>
         <span class="price">${product.price} BYN</span>
+        <a class="BTN" href="<%=ControllerConstant.LINK_APP_CATALOG%>"><%=WebAppConstant.CATALOG_PAGE_LINK_ALT%></a>
     </div>
 
     <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>" />

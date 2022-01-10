@@ -1,10 +1,9 @@
-package by.SergeyNavok.model.service;
+package by.SergeyNavok.leetoo.model.service;
 
-import by.SergeyNavok.constant.ControllerConstant;
-import by.SergeyNavok.model.bean.Product;
-import by.SergeyNavok.model.dao.ProductDAO;
-import by.SergeyNavok.model.exception.DAOException;
-import by.SergeyNavok.model.exception.ServiceException;
+import by.SergeyNavok.leetoo.model.bean.Product;
+import by.SergeyNavok.leetoo.model.dao.ProductDAO;
+import by.SergeyNavok.leetoo.model.exception.DAOException;
+import by.SergeyNavok.leetoo.model.exception.ServiceException;
 
 import java.util.List;
 

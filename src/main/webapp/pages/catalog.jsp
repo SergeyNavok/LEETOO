@@ -1,5 +1,5 @@
-<%@ page import="by.SergeyNavok.constant.ControllerConstant" %>
-<%@ page import="by.SergeyNavok.constant.WebAppConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.ControllerConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.WebAppConstant" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
@@ -29,9 +29,6 @@
                     <%--MAGIC NUMBER IS HERE!--%>
                     <a class="text-link" href="<c:url value="/product?id=${product.id}"/>">
                     <div class="products__block-item">
-
-                        <%--<img class="img" src="./files/product101.jpg" alt="<%=WebAppConstant.NO_IMAGE%>>">--%>
-
                         <img class="img" src="./img/product/${product.id}/product.jpg" alt="<%=WebAppConstant.NO_IMAGE%>">
                         <div class="name">${product.name}</div>
                         <div class="price">${product.price} BYN</div>

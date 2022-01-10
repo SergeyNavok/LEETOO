@@ -1,8 +1,8 @@
-package by.SergeyNavok.controller;
+package by.SergeyNavok.leetoo.controller;
 
-import by.SergeyNavok.constant.ControllerConstant;
-import by.SergeyNavok.model.bean.Product;
-import by.SergeyNavok.model.exception.DAOException;
+import by.SergeyNavok.leetoo.constant.ControllerConstant;
+import by.SergeyNavok.leetoo.model.bean.Product;
+import by.SergeyNavok.leetoo.model.exception.DAOException;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

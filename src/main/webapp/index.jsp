@@ -1,5 +1,5 @@
-<%@ page import="by.SergeyNavok.constant.ControllerConstant" %>
-<%@ page import="by.SergeyNavok.constant.WebAppConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.ControllerConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.WebAppConstant" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
@@ -24,7 +24,7 @@
 
         <div class="container">
             <span class="text"><%=WebAppConstant.HOME_PAGE_ABOUT%></span>
-            <a class="BTN" href="<%=ControllerConstant.LINK_APP_CATALOG%>"><%=WebAppConstant.HOME_PAGE_LINK%></a>
+            <a class="BTN" href="<%=ControllerConstant.LINK_APP_CATALOG%>"><%=WebAppConstant.CATALOG_PAGE_LINK%></a>
         </div>
 
         <c:import url="<%=ControllerConstant.FOOTER_ELEMENT_JSP%>" />

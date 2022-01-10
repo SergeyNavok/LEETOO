@@ -1,5 +1,5 @@
-<%@ page import="by.SergeyNavok.constant.WebAppConstant" %>
-<%@ page import="by.SergeyNavok.constant.ControllerConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.WebAppConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.ControllerConstant" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 

@@ -1,4 +1,4 @@
-package by.SergeyNavok.constant;
+package by.SergeyNavok.leetoo.constant;
 
 public class SQLRequest {
     public static final String SELECT_PRODUCT = "SELECT * FROM products";

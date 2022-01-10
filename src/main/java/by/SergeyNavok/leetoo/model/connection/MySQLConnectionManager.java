@@ -1,6 +1,6 @@
-package by.SergeyNavok.model.connection;
+package by.SergeyNavok.leetoo.model.connection;
 
-import by.SergeyNavok.constant.ConnectionConstant;
+import by.SergeyNavok.leetoo.constant.ConnectionConstant;
 
 import java.io.IOException;
 import java.io.InputStream;

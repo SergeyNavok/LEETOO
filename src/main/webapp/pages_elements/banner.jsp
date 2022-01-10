@@ -1,4 +1,4 @@
-<%@ page import="by.SergeyNavok.constant.WebAppConstant" %>
+<%@ page import="by.SergeyNavok.leetoo.constant.WebAppConstant" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 
 <div class="banner">

@@ -1,4 +1,4 @@
-package by.SergeyNavok.constant;
+package by.SergeyNavok.leetoo.constant;
 
 public class WebAppConstant {
     public static final String NAME_APP = GlobalConstant.NAME_WEB_APP;
@@ -20,7 +20,8 @@ public class WebAppConstant {
             "cupiditate doloribus impedit, veniam magni minus optio facilis dicta maxime beatae nisi ratione nesciunt " +
             "inventore mollitia ea voluptas, asperiores est molestias.";
 
-    public static final String HOME_PAGE_LINK = "Перейти в каталог";
+    public static final String CATALOG_PAGE_LINK = "Перейти в каталог";
+    public static final String CATALOG_PAGE_LINK_ALT = "Вернуться в каталог";
 
     public static final String SORT_DROPDOWN = "Сортировать: ";
     public static final String SORT_DROPDOWN_VALUE_1 = "по умолчанию";

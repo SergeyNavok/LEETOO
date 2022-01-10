@@ -1,9 +1,9 @@
-package by.SergeyNavok.model.dao;
+package by.SergeyNavok.leetoo.model.dao;
 
-import by.SergeyNavok.constant.SQLRequest;
-import by.SergeyNavok.model.bean.Product;
-import by.SergeyNavok.model.connection.MySQLConnectionManager;
-import by.SergeyNavok.model.exception.DAOException;
+import by.SergeyNavok.leetoo.constant.SQLRequest;
+import by.SergeyNavok.leetoo.model.bean.Product;
+import by.SergeyNavok.leetoo.model.connection.MySQLConnectionManager;
+import by.SergeyNavok.leetoo.model.exception.DAOException;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -28,11 +28,7 @@ public class ProductDAO {
                 String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
                 int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
 
-                //
-                byte[] img = resultSet.getBytes(SQLRequest.IMG_COLUMN);
-
-                products.add(new Product(id, category, name, description, price, img));
-                //products.add(new Product(id, category, name, description, price));
+                products.add(new Product(id, category, name, description, price));
             }
         } catch (SQLException e) {
             throw new DAOException();
@@ -63,11 +59,7 @@ public class ProductDAO {
                 String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
                 int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
 
-                //
-                byte[] img = resultSet.getBytes(SQLRequest.IMG_COLUMN);
-
-                products.add(new Product(id, category, name, description, price, img));
-                ////products.add(new Product(id, category, name, description, price));
+                products.add(new Product(id, category, name, description, price));
             }
         } catch (SQLException e) {
             throw new DAOException();
@@ -98,12 +90,7 @@ public class ProductDAO {
                 String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
                 int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
 
-                //
-                byte[] img = resultSet.getBytes(SQLRequest.IMG_COLUMN);
-
-                products.add(new Product(id, category, name, description, price, img));
-
-                ////products.add(new Product(id, category, name, description, price));
+                products.add(new Product(id, category, name, description, price));
             }
         } catch (SQLException e) {
             throw new DAOException();
@@ -135,11 +122,7 @@ public class ProductDAO {
                 String description = resultSet.getString(SQLRequest.DESCRIPTION_COLUMN);
                 int price = resultSet.getInt(SQLRequest.PRICE_COLUMN);
 
-                //
-                byte[] img = resultSet.getBytes(SQLRequest.IMG_COLUMN);
-
-                product = new Product(id, category, name, description, price, img);
-                //product = new Product(id, category, name, description, price);
+                product = new Product(id, category, name, description, price);
             }
         } catch (SQLException e) {
             throw new DAOException();

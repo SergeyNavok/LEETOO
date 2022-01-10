@@ -1,4 +1,4 @@
-package by.SergeyNavok.model.exception;
+package by.SergeyNavok.leetoo.model.exception;
 
 public class ServiceException extends Exception{
     public ServiceException() {

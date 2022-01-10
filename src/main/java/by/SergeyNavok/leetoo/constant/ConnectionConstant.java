@@ -1,4 +1,4 @@
-package by.SergeyNavok.constant;
+package by.SergeyNavok.leetoo.constant;
 
 public class ConnectionConstant {
     public static final String DB_PROPERTIES = "db.properties";

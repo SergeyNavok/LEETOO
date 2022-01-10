@@ -1,6 +1,6 @@
-package by.SergeyNavok.controller;
+package by.SergeyNavok.leetoo.controller;
 
-import by.SergeyNavok.model.service.ProductService;
+import by.SergeyNavok.leetoo.model.service.ProductService;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

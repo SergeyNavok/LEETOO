@@ -1,4 +1,4 @@
-package by.SergeyNavok.constant;
+package by.SergeyNavok.leetoo.constant;
 
 public class ControllerConstant {
     private static final String SLASH = GlobalConstant.SLASH;
