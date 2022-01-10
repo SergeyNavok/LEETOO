@@ -23,11 +23,26 @@
     <c:import url="<%=ControllerConstant.BANNER_ELEMENT_JSP%>" />
 
     <div class="container">
-
         <img class="img" src="./img/product/${product.id}/product.jpg">
         <span class="name">${product.name}</span>
         <p class="text">${product.description}</p>
-        <span class="price">${product.price} BYN</span>
+
+
+
+        <span class="name"><%=WebAppConstant.AVAILABLE_WEIGHTS%></span>
+        <div>
+            <span class="weight">600<%=WebAppConstant.WEIGHT%></span>
+            <span class="price">${product.price}<%=WebAppConstant.CURRENCY%></span>
+        </div>
+
+        <div>
+            <span class="weight">1500<%=WebAppConstant.WEIGHT%></span>
+            <span class="price">${product.price}<%=WebAppConstant.CURRENCY%></span>
+        </div>
+
+
+
+        <%--<span class="price">${product.price}<%=WebAppConstant.CURRENCY%></span>--%>
         <a class="BTN" href="<%=ControllerConstant.LINK_APP_CATALOG%>"><%=WebAppConstant.CATALOG_PAGE_LINK_ALT%></a>
     </div>
 

@@ -31,7 +31,7 @@
                     <div class="products__block-item">
                         <img class="img" src="./img/product/${product.id}/product.jpg" alt="<%=WebAppConstant.NO_IMAGE%>">
                         <div class="name">${product.name}</div>
-                        <div class="price">${product.price} BYN</div>
+                        <div class="price">${product.price}<%=WebAppConstant.CURRENCY%></div>
                     </div>
                     </a>
                 </div>

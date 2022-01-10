@@ -1,5 +1,6 @@
 package by.SergeyNavok.leetoo.model.service;
 
+import by.SergeyNavok.leetoo.constant.SortCategoryConstant;
 import by.SergeyNavok.leetoo.model.bean.Product;
 import by.SergeyNavok.leetoo.model.dao.ProductDAO;
 import by.SergeyNavok.leetoo.model.exception.DAOException;
@@ -18,14 +19,13 @@ public class ProductService {
         return productDAO.getProductList();
     }
 
-    public List<Product> getProductsListSortByPrice(String value) throws ServiceException {
+    public List<Product> getProductsListSortBy(String value) throws ServiceException {
         try {
-            int id = Integer.parseInt(value);
-            switch (id) {
-                case (2):
+            switch (value) {
+                case (SortCategoryConstant.HIGH_PRICE):
                     return productDAO.getProductListSortByHighPrice();
 
-                case (3):
+                case (SortCategoryConstant.LOW_PRICE):
                     return productDAO.getProductListSortByLowPrice();
 
                 default:

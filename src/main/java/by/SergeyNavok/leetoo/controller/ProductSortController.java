@@ -1,6 +1,7 @@
 package by.SergeyNavok.leetoo.controller;
 
 import by.SergeyNavok.leetoo.constant.ControllerConstant;
+import by.SergeyNavok.leetoo.constant.GlobalConstant;
 import by.SergeyNavok.leetoo.model.bean.Product;
 import by.SergeyNavok.leetoo.model.exception.ServiceException;
 
@@ -15,8 +16,9 @@ public class ProductSortController extends AbstractController {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
+            request.setCharacterEncoding(GlobalConstant.ENCODING);
             String value = request.getParameter(ControllerConstant.SORTING_FORM_ATTR);
-            List<Product> products = productService.getProductsListSortByPrice(value);
+            List<Product> products = productService.getProductsListSortBy(value);
             request.setAttribute(ControllerConstant.PRODUCT_LIST_ATTR, products);
             request.setAttribute(ControllerConstant.PRODUCT_SORT_ATTR, value);
             jumpToPage(request, response, ControllerConstant.CATALOG_JSP);

@@ -23,8 +23,12 @@ public class WebAppConstant {
     public static final String CATALOG_PAGE_LINK = "Перейти в каталог";
     public static final String CATALOG_PAGE_LINK_ALT = "Вернуться в каталог";
 
-    public static final String SORT_DROPDOWN = "Сортировать: ";
-    public static final String SORT_DROPDOWN_VALUE_1 = "по умолчанию";
-    public static final String SORT_DROPDOWN_VALUE_2 = "цена по возрастанию";
-    public static final String SORT_DROPDOWN_VALUE_3 = "цена по убыванию";
+    public static final String SORT_DROPDOWN = "Показать:";
+    public static final String SORT_DROPDOWN_VALUE_1 = "все товары";
+    public static final String SORT_DROPDOWN_VALUE_2 = "сначала дешевые";
+    public static final String SORT_DROPDOWN_VALUE_3 = "сначала дорогие";
+
+    public static final String CURRENCY = " BYN";
+    public static final String WEIGHT = " гр.";
+    public static final String AVAILABLE_WEIGHTS = "Доступный объем:";
 }
