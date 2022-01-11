@@ -1,0 +1,1 @@
+The initial stage of agreement with the customer.
