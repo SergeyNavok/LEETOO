@@ -28,6 +28,9 @@
         <p class="text">${product.description}</p>
 
 
+        <%--
+        Планировалось добавить несколько разных весов для одного и того же товара, но заказчик решил приостановить
+        дальнейшую разработку web-приложения
 
         <span class="name"><%=WebAppConstant.AVAILABLE_WEIGHTS%></span>
         <div>
@@ -38,11 +41,11 @@
         <div>
             <span class="weight">1500<%=WebAppConstant.WEIGHT%></span>
             <span class="price">${product.price}<%=WebAppConstant.CURRENCY%></span>
-        </div>
+        </div>--%>
 
 
 
-        <%--<span class="price">${product.price}<%=WebAppConstant.CURRENCY%></span>--%>
+        <span class="price">${product.price}<%=WebAppConstant.CURRENCY%></span>
         <a class="BTN" href="<%=ControllerConstant.LINK_APP_CATALOG%>"><%=WebAppConstant.CATALOG_PAGE_LINK_ALT%></a>
     </div>
 
