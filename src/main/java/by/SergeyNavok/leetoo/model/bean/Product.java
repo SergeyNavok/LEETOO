@@ -2,12 +2,12 @@ package by.SergeyNavok.leetoo.model.bean;
 
 public class Product {
     private int id;
-    private int category;
+    private String category;
     private String name;
     private String description;
     private int price;
 
-    public Product(int id, int category, String name, String description, int price) {
+    public Product(int id, String category, String name, String description, int price) {
         this.id = id;
         this.category = category;
         this.name = name;
@@ -19,7 +19,7 @@ public class Product {
         return id;
     }
 
-    public int getCategory() {
+    public String getCategory() {
         return category;
     }
 

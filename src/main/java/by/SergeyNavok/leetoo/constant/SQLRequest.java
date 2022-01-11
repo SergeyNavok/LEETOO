@@ -11,7 +11,4 @@ public class SQLRequest {
     public static final String NAME_COLUMN = "name";
     public static final String DESCRIPTION_COLUMN = "description";
     public static final String PRICE_COLUMN = "price";
-
-    //
-    public static final String IMG_COLUMN = "img";
 }

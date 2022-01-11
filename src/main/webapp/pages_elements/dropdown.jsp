@@ -23,6 +23,16 @@
             value="<%=SortCategoryConstant.HIGH_PRICE%>">
                 <%=SortCategoryConstant.HIGH_PRICE%>
             </option>
+
+            <option <c:if test="${sort == 'уход за кожей'}">selected="selected"</c:if>
+                    value="<%=SortCategoryConstant.SKIN_CARE%>">
+                <%=SortCategoryConstant.SKIN_CARE%>
+            </option>
+
+            <option <c:if test="${sort == 'гели'}">selected="selected"</c:if>
+                    value="<%=SortCategoryConstant.GELS%>">
+                <%=SortCategoryConstant.GELS%>
+            </option>
         </select>
     </form>
 </div>

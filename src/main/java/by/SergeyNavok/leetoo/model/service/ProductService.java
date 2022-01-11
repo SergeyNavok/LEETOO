@@ -22,6 +22,9 @@ public class ProductService {
     public List<Product> getProductsListSortBy(String value) throws ServiceException {
         try {
             switch (value) {
+                case (SortCategoryConstant.DEFAULT):
+                    return productDAO.getProductList();
+
                 case (SortCategoryConstant.HIGH_PRICE):
                     return productDAO.getProductListSortByHighPrice();
 
@@ -29,7 +32,7 @@ public class ProductService {
                     return productDAO.getProductListSortByLowPrice();
 
                 default:
-                    return productDAO.getProductList();
+                    return productDAO.getProductListSortByCategory(value);
             }
         } catch (NumberFormatException | IndexOutOfBoundsException | DAOException e) {
             throw new ServiceException(e);
